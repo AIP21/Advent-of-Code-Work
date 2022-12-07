@@ -4,7 +4,7 @@ import utils.InputUtils;
  * This is a Day class used for Advent of Code
  */
 public abstract class AbstractDay {
-    private InputUtils inputUtils;
+    public InputUtils inputUtils;
 
     /**
      * 
@@ -16,11 +16,13 @@ public abstract class AbstractDay {
         inputUtils = new InputUtils(System.getProperty("user.dir") + "/inputs/"
                 + (this.getClass().toString().replace("class ", "")) + ".txt");
 
+        long start = System.currentTimeMillis();
         if (!skipPart1) {
             part1();
         }
 
         part2();
+        print("Total time: " + (System.currentTimeMillis() - start) + "ms");
     }
 
     /**
@@ -32,4 +34,8 @@ public abstract class AbstractDay {
      * Code for part two of this day
      */
     public abstract void part2();
+
+    public void print(Object o) {
+        System.out.println(o);
+    }
 }

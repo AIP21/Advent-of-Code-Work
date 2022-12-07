@@ -24,7 +24,7 @@ public class InputUtils {
         lines = getLines(inputFile);
     }
 
-    public ArrayList<String> getLines(File inputFile) {
+    private ArrayList<String> getLines(File inputFile) {
         BufferedReader reader;
 
         ArrayList<String> lines = new ArrayList<>();
@@ -53,6 +53,10 @@ public class InputUtils {
         return lines;
     }
 
+    public ArrayList<String> getLines(int start, int end) {
+        return new ArrayList<>(lines.subList(start, end));
+    }
+
     public String getLine(int index) {
         return lines.get(index);
     }
@@ -63,6 +67,16 @@ public class InputUtils {
 
     public String getLinePart(int lineIndex, int startIndex, int endIndex) {
         return lines.get(lineIndex).substring(startIndex, endIndex);
+    }
+
+    public ArrayList<String[]> getLinesSplit(String regex) {
+        ArrayList<String[]> splitLines = new ArrayList<>();
+
+        for (String line : lines) {
+            splitLines.add(line.split(regex));
+        }
+
+        return splitLines;
     }
 
     public int getLineCount() {
