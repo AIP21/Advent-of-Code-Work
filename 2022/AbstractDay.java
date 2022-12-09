@@ -38,4 +38,12 @@ public abstract class AbstractDay {
     public void print(Object o) {
         System.out.println(o);
     }
+
+    public void print(Object o, boolean newLine) {
+        if (newLine) {
+            System.out.println(o);
+        } else {
+            System.out.print(o);
+        }
+    }
 }
