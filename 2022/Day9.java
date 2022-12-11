@@ -129,9 +129,16 @@ public class Day9 extends AbstractDay {
                     subTail = tails[e];
                 }
 
+                /*
+                 * head : (1, 0)
+                 * tail 0 : (0, 0)
+                 * follow(head, tail 0) : (0, 0)
+                 * tail 1 : (0, 0)
+                 * follow(tail 0, tail 1) : (0, 0)
+                 */
+
                 if (!visited.contains(tails[tails.length - 1].toString()))
                     visited.add(tails[tails.length - 1].toString());
-
             }
 
             // printGrid(head, tails, step);
