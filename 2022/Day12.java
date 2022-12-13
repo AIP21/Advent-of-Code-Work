@@ -234,10 +234,6 @@ public class Day12 extends AbstractDay {
                 Elevation elev = new Elevation("" + index, coord.toString(), coord, elevation);
                 cells.add(elev);
 
-                if (index == endIndex) {
-                    end = elev;
-                }
-
                 ArrayList<String> cons = new ArrayList<>();
 
                 if (x < grid.get(y).size() - 1) {
