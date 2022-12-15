@@ -5,6 +5,7 @@ import java.lang.reflect.Constructor;
 import java.lang.reflect.Method;
 import utils.BigInt;
 import utils.Utils;
+import utils.Vec2;
 import utils.aStar.Graph;
 import utils.aStar.RouteFinder;
 import utils.aStar.GraphNode;

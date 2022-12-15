@@ -1,3 +1,13 @@
+import java.io.BufferedOutputStream;
+import java.io.BufferedWriter;
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.io.OutputStreamWriter;
+import java.io.PrintStream;
+
 import utils.InputUtils;
 
 /**
@@ -5,6 +15,7 @@ import utils.InputUtils;
  */
 public abstract class AbstractDay {
     public InputUtils inputUtils;
+    public PrintStream printFileWriter = null;
 
     /**
      * 
@@ -16,6 +27,23 @@ public abstract class AbstractDay {
         inputUtils = new InputUtils(System.getProperty("user.dir") + "/inputs/"
                 + (this.getClass().toString().replace("class ", "")) + ".txt");
 
+        try {
+            File dir = new File(
+                    System.getProperty("user.dir") + "/files/" + this.getClass().toString().replace("class ", ""));
+            if (!dir.exists()) {
+                dir.mkdir();
+            }
+
+            File file = new File(
+                    System.getProperty("user.dir") + "/files/" + (this.getClass().toString().replace("class ", ""))
+                            + "/LOG" + System.currentTimeMillis() + ".txt");
+            file.createNewFile();
+
+            printFileWriter = new PrintStream(new BufferedOutputStream(new FileOutputStream(file, true)), true);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
         long start = System.currentTimeMillis();
         if (!skipPart1) {
             part1();
@@ -23,6 +51,14 @@ public abstract class AbstractDay {
 
         part2();
         print("Total time: " + (System.currentTimeMillis() - start) + "ms");
+
+        if (printFileWriter != null) {
+            try {
+                printFileWriter.close();
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+        }
     }
 
     /**
@@ -37,13 +73,29 @@ public abstract class AbstractDay {
 
     public void print(Object o) {
         System.out.println(o);
+        printFileWriter.println(o);
     }
 
     public void print(Object o, boolean newLine) {
         if (newLine) {
             System.out.println(o);
+            printFileWriter.println(o);
         } else {
             System.out.print(o);
+            printFileWriter.print(o);
         }
     }
+
+    public void log(Object o) {
+        printFileWriter.println(o);
+    }
+
+    public void log(Object o, boolean newLine) {
+        if (newLine) {
+            printFileWriter.println(o);
+        } else {
+            printFileWriter.print(o);
+        }
+    }
+
 }
