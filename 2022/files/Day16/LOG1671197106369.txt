@@ -1,0 +1,12 @@
+Room: BB, flowRate: 13, leadsTo: [Ljava.lang.String;@2ff4acd0
+Room: DD, flowRate: 20, leadsTo: [Ljava.lang.String;@54bedef2
+Room: FF, flowRate: 0, leadsTo: [Ljava.lang.String;@5caf905d
+Room: HH, flowRate: 22, leadsTo: [Ljava.lang.String;@27716f4
+Room: JJ, flowRate: 21, leadsTo: [Ljava.lang.String;@8efb846
+Room: AA, flowRate: 0, leadsTo: [Ljava.lang.String;@2a84aee7
+Room: CC, flowRate: 2, leadsTo: [Ljava.lang.String;@a09ee92
+Room: EE, flowRate: 3, leadsTo: [Ljava.lang.String;@30f39991
+Room: GG, flowRate: 0, leadsTo: [Ljava.lang.String;@452b3a41
+Room: II, flowRate: 0, leadsTo: [Ljava.lang.String;@4a574795
+Following is Depth First Traversal (starting from vertex 2)
+Total time: 49ms

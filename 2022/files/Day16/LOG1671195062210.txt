@@ -1,0 +1,11 @@
+AA0DD, II, BB
+BB13CC, AA
+CC2DD, BB
+DD20CC, AA, EE
+EE3FF, DD
+FF0EE, GG
+GG0FF, HH
+HH22; tunnel leads to valve GG
+II0AA, JJ
+JJ21; tunnel leads to valve II
+Total time: 15ms

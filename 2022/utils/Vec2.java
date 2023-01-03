@@ -50,4 +50,12 @@ public class Vec2 {
     public static float dist(Vec2 a, Vec2 b) {
         return a.distTo(b);
     }
+
+    public int mahattanDistTo(Vec2 o) {
+        return Math.abs(x - o.x) + Math.abs(y - o.y);
+    }
+
+    public static int mahattanDist(Vec2 a, Vec2 b) {
+        return a.mahattanDistTo(b);
+    }
 }

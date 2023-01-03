@@ -1,0 +1,45 @@
+NS - {GG=7, LI=9, UH=15, HR=3, RI=5, VT=7, RP=8, DT=6, KV=3, JQ=10, SU=9, CN=11, QF=13, YA=3}
+UH - {NS=15, GG=11, LI=15, RI=11, HR=16, VT=9, RP=12, DT=12, JQ=6, KV=13, SU=9, CN=8, QF=3, YA=17}
+GG - {NS=7, LI=6, UH=11, RI=3, HR=8, VT=5, RP=4, DT=3, KV=5, JQ=6, SU=3, CN=7, QF=9, YA=9}
+LI - {NS=9, GG=6, UH=15, RI=8, HR=10, VT=10, RP=9, DT=4, KV=7, JQ=10, SU=7, CN=10, QF=13, YA=11}
+RI - {NS=5, GG=3, LI=8, UH=11, HR=6, VT=3, RP=4, DT=5, KV=3, JQ=6, SU=5, CN=7, QF=9, YA=7}
+HR - {NS=3, GG=9, LI=11, UH=17, RI=7, VT=9, RP=10, DT=8, KV=5, JQ=12, SU=11, CN=13, QF=15, YA=5}
+VT - {NS=7, GG=5, UH=9, LI=10, RI=3, HR=8, RP=3, DT=7, JQ=4, KV=5, SU=7, CN=4, QF=7, YA=9}
+RP - {NS=9, GG=4, LI=9, UH=11, RI=5, HR=10, VT=3, DT=6, JQ=6, KV=7, SU=6, CN=4, QF=9, YA=11}
+DT - {NS=6, GG=3, LI=4, UH=12, RI=5, HR=7, VT=7, RP=6, KV=4, JQ=7, SU=4, CN=7, QF=10, YA=8}
+KV - {NS=3, GG=5, LI=7, UH=13, RI=3, HR=4, VT=5, RP=6, DT=4, JQ=8, SU=7, CN=9, QF=11, YA=5}
+JQ - {NS=10, UH=6, GG=6, LI=10, RI=6, HR=11, VT=4, RP=7, DT=7, KV=8, SU=4, CN=3, QF=4, YA=12}
+SU - {NS=9, GG=3, LI=7, UH=9, RI=5, HR=10, VT=7, RP=7, DT=4, JQ=4, KV=7, CN=4, QF=7, YA=11}
+CN - {NS=10, GG=7, UH=8, LI=10, RI=6, HR=11, VT=4, RP=4, DT=7, JQ=3, KV=8, SU=4, QF=6, YA=12}
+QF - {NS=13, UH=3, GG=9, LI=13, RI=9, HR=14, VT=7, RP=10, DT=10, JQ=4, KV=11, SU=7, CN=6, YA=15}
+YA - {NS=3, GG=9, LI=11, UH=17, HR=5, RI=7, VT=9, RP=10, DT=8, KV=5, JQ=12, SU=11, CN=13, QF=15}
+BEST STATE: State[cur=HR, minutes=4, released=783, alreadyOpened=[NS, LI, HR]]
+BEST STATE: State[cur=YA, minutes=3, released=802, alreadyOpened=[NS, LI, YA]]
+BEST STATE: State[cur=UH, minutes=3, released=824, alreadyOpened=[NS, HR, UH]]
+BEST STATE: State[cur=HR, minutes=4, released=839, alreadyOpened=[NS, SU, HR]]
+BEST STATE: State[cur=YA, minutes=3, released=858, alreadyOpened=[NS, SU, YA]]
+BEST STATE: State[cur=UH, minutes=3, released=1024, alreadyOpened=[NS, YA, UH]]
+BEST STATE: State[cur=YA, minutes=5, released=1034, alreadyOpened=[NS, GG, DT, YA]]
+BEST STATE: State[cur=LI, minutes=4, released=1124, alreadyOpened=[NS, HR, YA, LI]]
+BEST STATE: State[cur=LI, minutes=6, released=1138, alreadyOpened=[NS, DT, SU, LI]]
+BEST STATE: State[cur=LI, minutes=4, released=1164, alreadyOpened=[NS, KV, YA, LI]]
+BEST STATE: State[cur=LI, minutes=4, released=1174, alreadyOpened=[NS, YA, HR, LI]]
+BEST STATE: State[cur=HR, minutes=5, released=1196, alreadyOpened=[NS, YA, DT, HR]]
+BEST STATE: State[cur=UH, minutes=2, released=1280, alreadyOpened=[KV, NS, YA, UH]]
+BEST STATE: State[cur=LI, minutes=7, released=1306, alreadyOpened=[NS, KV, DT, GG, LI]]
+BEST STATE: State[cur=LI, minutes=5, released=1348, alreadyOpened=[NS, KV, DT, SU, LI]]
+BEST STATE: State[cur=HR, minutes=4, released=1364, alreadyOpened=[NS, YA, KV, DT, HR]]
+BEST STATE: State[cur=LI, minutes=3, released=1379, alreadyOpened=[KV, NS, HR, YA, LI]]
+BEST STATE: State[cur=SU, minutes=3, released=1391, alreadyOpened=[KV, NS, HR, YA, SU]]
+BEST STATE: State[cur=LI, minutes=4, released=1410, alreadyOpened=[KV, NS, YA, GG, LI]]
+BEST STATE: State[cur=LI, minutes=3, released=1429, alreadyOpened=[KV, NS, YA, HR, LI]]
+BEST STATE: State[cur=SU, minutes=3, released=1441, alreadyOpened=[KV, NS, YA, HR, SU]]
+BEST STATE: State[cur=HR, minutes=4, released=1450, alreadyOpened=[KV, NS, YA, DT, HR]]
+BEST STATE: State[cur=RI, minutes=2, released=1461, alreadyOpened=[NS, YA, KV, DT, SU, RI]]
+BEST STATE: State[cur=JQ, minutes=3, released=1471, alreadyOpened=[NS, YA, KV, DT, SU, JQ]]
+BEST STATE: State[cur=CN, minutes=3, released=1474, alreadyOpened=[NS, YA, KV, DT, SU, CN]]
+BEST STATE: State[cur=YA, minutes=7, released=1510, alreadyOpened=[GG, DT, KV, NS, HR, YA]]
+BEST STATE: State[cur=HR, minutes=7, released=1560, alreadyOpened=[GG, DT, KV, NS, YA, HR]]
+BEST STATE: State[cur=YA, minutes=3, released=1592, alreadyOpened=[GG, SU, DT, KV, NS, HR, YA]]
+BEST STATE: State[cur=HR, minutes=3, released=1642, alreadyOpened=[GG, SU, DT, KV, NS, YA, HR]]
+Total time: 1085ms

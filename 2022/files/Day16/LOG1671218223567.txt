@@ -1,0 +1,17 @@
+CC - {DD=2, HH=6, EE=3, JJ=5, BB=2}
+DD - {CC=2, HH=5, EE=2, JJ=4, BB=3}
+HH - {CC=6, DD=5, EE=4, JJ=8, BB=7}
+EE - {CC=3, DD=2, HH=4, JJ=5, BB=4}
+JJ - {CC=5, DD=4, HH=8, EE=5, BB=4}
+BB - {CC=2, DD=3, HH=7, EE=4, JJ=4}
+BEST STATE: State[cur=BB, minutes=7, released=1364, alreadyOpened=[CC, DD, HH, EE, JJ, BB]]
+BEST STATE: State[cur=JJ, minutes=8, released=1366, alreadyOpened=[CC, DD, HH, EE, BB, JJ]]
+BEST STATE: State[cur=BB, minutes=5, released=1373, alreadyOpened=[CC, DD, JJ, HH, EE, BB]]
+BEST STATE: State[cur=EE, minutes=6, released=1454, alreadyOpened=[CC, DD, JJ, BB, HH, EE]]
+BEST STATE: State[cur=EE, minutes=6, released=1456, alreadyOpened=[CC, DD, BB, JJ, HH, EE]]
+BEST STATE: State[cur=EE, minutes=6, released=1512, alreadyOpened=[DD, CC, JJ, BB, HH, EE]]
+BEST STATE: State[cur=EE, minutes=8, released=1632, alreadyOpened=[DD, CC, BB, JJ, HH, EE]]
+BEST STATE: State[cur=EE, minutes=8, released=1648, alreadyOpened=[DD, JJ, BB, CC, HH, EE]]
+BEST STATE: State[cur=CC, minutes=6, released=1649, alreadyOpened=[DD, JJ, BB, HH, EE, CC]]
+BEST STATE: State[cur=CC, minutes=6, released=1651, alreadyOpened=[DD, BB, JJ, HH, EE, CC]]
+Total time: 233ms

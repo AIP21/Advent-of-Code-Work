@@ -1,0 +1,11 @@
+AA 0 BB, DD, II, 
+BB 13 AA, CC, 
+CC 2 BB, DD, 
+DD 20 AA, CC, EE, 
+EE 3 DD, FF, 
+FF 0 EE, GG, 
+GG 0 FF, HH, 
+HH 22 GG, 
+II 0 AA, JJ, 
+JJ 21 II, 
+Compute paths for time: 30
